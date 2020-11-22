@@ -63,7 +63,7 @@ The results of the Balanced Forest algorithm show an improving accuracy score at
   ![brf.PNG](https://github.com/Alawler12/Credit_Risk_Analysis/blob/main/screenshots/brf.PNG)
 
 **Easy AdaBoost**
-The results of the Easy Adaboost algorithm shows the best accuracy score by far at 92%.  The model shows better recall than precision, and there is a better balance between High and Low risk loans.
+The results of the Easy Adaboost algorithm shows the best accuracy score by far at 92%.  The model shows better recall than precision, and there is a better balance between High and Low risk loans, but still not very good.
 - Balanced Accuracy Score: 92%
 - Precision: 
   - High Risk: .09 
@@ -75,5 +75,7 @@ The results of the Easy Adaboost algorithm shows the best accuracy score by far 
 ![eea.PNG](https://github.com/Alawler12/Credit_Risk_Analysis/blob/main/screenshots/eea.PNG)
 
 ### Summary: 
-A comparison of these six models shows that the Adaboost Ensemble Classifier performs the best.  In addition to having the best balanced accuracy score at 92%, this model also shows very good recall at an average of 94%.  The recall for High Risk loans is 89% and for Low Risk loans is 94%.  This model has very good precision for Low Risk loans, at 100%, but only 9% precision for High Risk loans.  This all shows that this model is very specific and will do a very good job of finding the loans in each category, but that the accuracy of each characterization is better for Low Risk loans than High Risk loans.  In the case of a financial institution assessing credit risk, it is more important to be sensitive than precise, especially in regard to the riskiness of giving out loans.  It is better to err on the side of approving a low risk loan than a high risk loan, if the aim is to maintain the financial integrity of your institution.  In this case, the Adaboost Ensemble Classifier is a good algorithm for this task.
+A comparison of these six models shows that the Adaboost Ensemble Classifier performs the best but is ultimately not an adequate model for this task.  This model has the best balanced accuracy score at 92%, and shows good recall at an average of 94%, but the precision between High and Low risk loans is 9% and 100% respectively.  This shows that this model is quite specific and will do a good job of finding the loans in each category, but that the accuracy of each characterization is not good.  In other words, this model is likely to find the majority of High and Low risk loans, but it is unlikely that the prediction will be accurate, especially with High risk loan.  The result of this would be that for every 100 loans predicted to be High risk, only 9 of them actually would be. This would result in increased financial risk for the lending institution, as they could not be confident that they are granting loans that would guarantee a return on investment, and could miss out on many loans that would.  Ultimately, it’s not a reliable model for this purpose. 
+Since the Adaboost Ensemble Classifier performed the best, and was still not reliable enough, I would not recommend any of these models on the basis of these findings.
+
 
