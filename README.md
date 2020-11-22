@@ -3,6 +3,7 @@ The purpose of this project was to use several different machine learning models
 
 ## Results 
 **Random Oversampling**
+The results of the Random Oversampling show better recall than precision, but neither is well-balanced.
 - Balanced Accuracy Score: 58%
 - Precision: 	
   - High Risk: .01 
@@ -14,6 +15,7 @@ The purpose of this project was to use several different machine learning models
   ![ROS.PNG](https://github.com/Alawler12/Credit_Risk_Analysis/blob/main/screenshots/ROS.PNG)
 
 **SMOTE**
+The results of the SMOTE algorithm show better recall than precision but neither is well balanced.
 - Balanced Accuracy Score: 65%
 - Precision: 	
   - High Risk: .01
@@ -25,6 +27,7 @@ The purpose of this project was to use several different machine learning models
 ![smote.PNG](https://github.com/Alawler12/Credit_Risk_Analysis/blob/main/screenshots/smote.PNG)
 
 **Cluster Centroids**
+The results of the Cluster Centroids algorithm show better recall than precision but is not well balanced.
 - Balanced Accuracy Score: 65%
 - Precision: 	
   - High Risk: .01 
@@ -36,6 +39,7 @@ The purpose of this project was to use several different machine learning models
 ![cc.PNG](https://github.com/Alawler12/Credit_Risk_Analysis/blob/main/screenshots/cc.PNG)
 
 **SMOTEENN**
+The results of the SMOTEEN algorithm show better recall than precision but is not well balanced.
 - Balanced Accuracy Score: 53%
 - Precision: 	
   - High Risk: .01 
@@ -47,6 +51,7 @@ The purpose of this project was to use several different machine learning models
 ![smoteenn.PNG](https://github.com/Alawler12/Credit_Risk_Analysis/blob/main/screenshots/smoteenn.PNG)
 
 **Balanced Random Forest**
+The results of the Balanced Forest algorithm show better recall than precison
 - Balanced Accuracy Score: 77%
 - Precision: 
   - High Risk: .03 
